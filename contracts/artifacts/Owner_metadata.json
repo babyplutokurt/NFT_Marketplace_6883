@@ -1,0 +1,122 @@
+{
+	"compiler": {
+		"version": "0.8.19+commit.7dd6d404"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "oldOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnerSet",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "changeOwner",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getOwner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "Set & change owner",
+			"kind": "dev",
+			"methods": {
+				"changeOwner(address)": {
+					"details": "Change owner",
+					"params": {
+						"newOwner": "address of new owner"
+					}
+				},
+				"constructor": {
+					"details": "Set contract deployer as owner"
+				},
+				"getOwner()": {
+					"details": "Return owner address ",
+					"returns": {
+						"_0": "address of owner"
+					}
+				}
+			},
+			"title": "Owner",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/owner.sol": "Owner"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/console.sol": {
+			"keccak256": "0xd78b257c028edb518a35c85533f662247c64891c26023afb3d013ef6692206c0",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://5dc38c0c84cd8045df65a5ecec7c5bff9144a0534feac387975244a1456b4994",
+				"dweb:/ipfs/QmXo4pwsE6Ev22zraWnfXZd6ivVzPzJkj4v7WiSGESFZ1c"
+			]
+		},
+		"contracts/owner.sol": {
+			"keccak256": "0xd8fe1d797f3cf9664b168639b553246b9bfa6c181f522f0895c92d69e1747044",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://883954c975c3dd1c60edd984c343c3a408baa3c75e701d565d426192581322a8",
+				"dweb:/ipfs/QmcCmXZx9hdT7J2soRCgFkFN8XjuKbaPsTrXjuN7aRLB6F"
+			]
+		}
+	},
+	"version": 1
+}
